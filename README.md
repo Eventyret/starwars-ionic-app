@@ -24,3 +24,10 @@ $ ionic cordova run ios
 
 Substitute ios for android if not on a Mac.
 
+# How to test this app
+
+1. `git clone https://github.com/Eventyret/starwars-ionic-app.git`
+2. `cd into project`
+3. `ionic serve`
+
+Server should now start, this is best viewed in chrome, by pressing `F12` and set to Nexus 6P responsive
