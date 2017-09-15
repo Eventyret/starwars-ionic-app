@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Star Wars People List</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="home">
+  <ion-grid *ngIf="peopleData">
+    <ion-card *ngFor="let person of peopleData">
+      <img src="https://unsplash.it/500/300/?random">
+      <ion-card-content>
+          <ion-item text-center>
+              <ion-avatar item-start>
+                <img src="https://i.pinimg.com/736x/d0/7a/b9/d07ab968709cbac2e5e45b5355b4d9d6--star-wars-logos-storm-troopers.jpg">
+              </ion-avatar>
+              <h2>{{person.name}}</h2>
+            </ion-item><br>
+          <p>We are going to make placeholder text great again. Greater than ever before. Lorem Ispum is a choke artist. It chokes!
+            You have so many different things placeholder text has to be able to do, and I don't believe Lorem Ipsum has the
+            stamina. Look at these words. Are they small words? And he referred to my words - if they're small, something else
+            must be small. I guarantee you there's no problem, I guarantee.</p><br>
+        <ion-list>
+          <ion-item text-capitalize>
+            <ion-icon name="bonfire" item-start></ion-icon>
+            Yearh of Birth: {{person.birth_year}}
+          </ion-item>
+          <ion-item text-capitalize>
+            <ion-icon name="eye" item-start></ion-icon>
+            Eye Color: {{person.eye_color}}
+          </ion-item>
+          <ion-item text-capitalize>
+            <ion-icon name="body" item-start></ion-icon>
+            Gender: {{person.gender}}
+          </ion-item>
+
+          <ion-item text-capitalize>
+            <ion-icon name="information" item-start></ion-icon>
+            Hair Color: {{person.hair_color}}
+          </ion-item>
+          <ion-item text-capitalize>
+            <ion-icon name="information" item-start></ion-icon>
+            {{person.height}} CM
+          </ion-item>
+          <ion-item text-capitalize>
+            <ion-icon name="build" item-start></ion-icon>
+            {{person.mass}} KG
+          </ion-item>
+        </ion-list>
+      </ion-card-content>
+    </ion-card>
+  </ion-grid>
+</ion-content>
